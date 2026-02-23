@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Eye, EyeOff, Lock } from "lucide-react";
+import loginHeader from "@/assets/login-header.png";
 import loginBg from "@/assets/login-bg.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
@@ -63,6 +64,10 @@ const Auth = () => {
 
         {/* Content overlay */}
         <div className="relative z-10 flex flex-col flex-1 px-6 pt-10 pb-8">
+          {/* Header image */}
+          <div className="flex justify-center mb-4">
+            <img src={loginHeader} alt="Rotasmart Motorista" className="w-full max-w-[200px] object-contain" />
+          </div>
 
           <div className="bg-card/80 backdrop-blur-xl rounded-3xl shadow-card p-8 border border-border/50">
           <form onSubmit={handleSubmit} className="space-y-5">
