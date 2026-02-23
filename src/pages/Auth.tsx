@@ -57,10 +57,10 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-[100dvh] flex items-center justify-center bg-muted/30">
-      <div className="relative w-full max-w-sm min-h-[100dvh] sm:min-h-[812px] sm:rounded-3xl overflow-hidden flex flex-col">
+    <div className="min-h-[100dvh] flex items-center justify-center" style={{ backgroundColor: '#1a1a2e' }}>
+      <div className="relative w-full max-w-sm min-h-[100dvh] sm:min-h-[812px] sm:rounded-3xl overflow-hidden flex flex-col" style={{ backgroundColor: '#1a1a2e' }}>
         {/* Background image - fills entire mobile frame */}
-        <img src={loginBg} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 0%' }} />
+        <img src={loginBg} alt="" loading="eager" fetchPriority="high" className="absolute inset-0 w-full h-full object-cover transition-opacity duration-300" style={{ objectPosition: 'center 0%' }} />
 
         {/* Content overlay */}
         <div className="relative z-10 flex flex-col flex-1 justify-end px-3 pt-10 safe-bottom pb-[10px]">
