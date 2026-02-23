@@ -58,9 +58,9 @@ const Auth = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-muted/30">
-      <div className="relative w-full max-w-sm min-h-screen sm:min-h-0 sm:rounded-3xl overflow-hidden flex flex-col">
-        {/* Background image - contained within the mobile frame */}
-        <img src={loginBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
+      <div className="relative w-full max-w-sm min-h-screen sm:min-h-[812px] sm:rounded-3xl overflow-hidden flex flex-col">
+        {/* Background image - fills entire mobile frame */}
+        <img src={loginBg} alt="" className="absolute inset-0 w-full h-full object-cover object-center" />
 
         {/* Content overlay */}
         <div className="relative z-10 flex flex-col flex-1 px-6 pt-10 pb-8 justify-end">
