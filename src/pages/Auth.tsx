@@ -57,16 +57,19 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen relative flex items-center justify-center p-4 overflow-hidden">
-      {/* Background image */}
-      <img src={loginBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
-      <div className="w-full max-w-sm relative z-10">
-        {/* Header image */}
-        <div className="flex justify-center mb-6">
-          <img src={loginHeader} alt="Rotasmart Motorista" className="w-full max-w-xs object-contain" />
-        </div>
+    <div className="min-h-screen flex items-center justify-center bg-muted/30">
+      <div className="relative w-full max-w-sm min-h-screen sm:min-h-0 sm:rounded-3xl overflow-hidden flex flex-col">
+        {/* Background image - contained within the mobile frame */}
+        <img src={loginBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
 
-        <div className="bg-card/80 backdrop-blur-xl rounded-3xl shadow-card p-8 border border-border/50">
+        {/* Content overlay */}
+        <div className="relative z-10 flex flex-col flex-1 px-6 pt-10 pb-8">
+          {/* Header image */}
+          <div className="flex justify-center mb-4">
+            <img src={loginHeader} alt="Rotasmart Motorista" className="w-full max-w-[200px] object-contain" />
+          </div>
+
+          <div className="bg-card/80 backdrop-blur-xl rounded-3xl shadow-card p-8 border border-border/50">
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Email */}
             <div className="space-y-1.5">
@@ -163,6 +166,8 @@ const Auth = () => {
               {isSignUp ? "Entrar" : "Criar conta gratuita"}
             </button>
           </p>
+        </div>
+
         </div>
       </div>
     </div>
