@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Mail, Eye, EyeOff, Lock } from "lucide-react";
+import loginHeader from "@/assets/login-header.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
@@ -57,6 +58,11 @@ const Auth = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center p-4">
       <div className="w-full max-w-sm">
+        {/* Header image */}
+        <div className="flex justify-center mb-6">
+          <img src={loginHeader} alt="Rotasmart Motorista" className="w-full max-w-xs object-contain" />
+        </div>
+
         <div className="bg-card/80 backdrop-blur-xl rounded-3xl shadow-card p-8 border border-border/50">
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Email */}
