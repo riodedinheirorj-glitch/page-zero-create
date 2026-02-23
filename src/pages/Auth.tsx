@@ -63,7 +63,7 @@ const Auth = () => {
         <img src={loginBg} alt="" className="absolute inset-0 w-full h-full object-cover" style={{ objectPosition: 'center 10%' }} />
 
         {/* Content overlay */}
-        <div className="relative z-10 flex flex-col flex-1 justify-end px-3 pb-4 pt-10 safe-bottom">
+        <div className="relative z-10 flex flex-col flex-1 justify-end px-3 pt-10 safe-bottom pb-[10px]">
           {/* Header image */}
           
 
