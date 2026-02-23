@@ -63,13 +63,13 @@ const Auth = () => {
         <img src={loginBg} alt="" className="absolute inset-0 w-full h-full object-cover" />
 
         {/* Content overlay */}
-        <div className="relative z-10 flex flex-col flex-1 px-6 pt-10 pb-8">
+        <div className="relative z-10 flex flex-col flex-1 px-6 pt-10 pb-8 justify-end">
           {/* Header image */}
           <div className="flex justify-center mb-4">
             <img src={loginHeader} alt="Rotasmart Motorista" className="w-full max-w-[200px] object-contain" />
           </div>
 
-          <div className="bg-card/80 backdrop-blur-xl rounded-3xl shadow-card p-8 border border-border/50">
+          <div className="bg-card/95 backdrop-blur-xl rounded-3xl shadow-card p-8 border border-border/50">
           <form onSubmit={handleSubmit} className="space-y-5">
             {/* Email */}
             <div className="space-y-1.5">
