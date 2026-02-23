@@ -65,9 +65,9 @@ const Auth = () => {
         {/* Content overlay */}
         <div className="relative z-10 flex flex-col flex-1 pt-10 pb-3 justify-end py-[16px] px-[13px]">
           {/* Header image */}
-          <div className="flex justify-center mb-3">
-            <img src={loginHeader} alt="Rotasmart Motorista" className="w-full max-w-[160px] object-contain" />
-          </div>
+          
+
+
 
           <div className="bg-card/95 backdrop-blur-xl rounded-2xl shadow-card p-4 border border-border/50 pt-[27px]">
           <form onSubmit={handleSubmit} className="space-y-2.5">
