@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Mail, Eye, EyeOff, Lock } from "lucide-react";
 import loginHeader from "@/assets/login-header.png";
-import loginBg from "@/assets/login-bg.png";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { supabase } from "@/integrations/supabase/client";
@@ -57,7 +56,7 @@ const Auth = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center p-4 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${loginBg})` }}>
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-100 flex items-center justify-center p-4">
       <div className="w-full max-w-sm">
         {/* Header image */}
         <div className="flex justify-center mb-6">
